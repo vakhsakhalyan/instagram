@@ -1,0 +1,117 @@
+.card-header-image {
+  border-radius: 45px;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+.card-header {
+  padding: 7px 9px;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.card-header-image img {
+  width: 100%;
+  height: 100%;
+}
+.card-image img {
+  width: 100%;
+}
+.card-header-title-username {
+  font-weight: bold;
+  line-height: 18px;
+}
+.card-header-title-location {
+  line-height: 18px;
+  display: inherit;
+}
+.card-header {
+  padding: 7px 9px;
+}
+.card-header-title {
+  margin-left: 8px;
+  display: block;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.card {
+  width: 320px;
+}
+.card-header-date {
+  float: right;
+  color: #b5b5b5;
+}
+.card-likes {
+  padding: 5px;
+}
+.card-likes span {
+  cursor: pointer;
+}
+.card-like-text{
+  display: inline-block;
+
+}
+.card-likes-image {
+  vertical-align: middle;
+  width:  24px;
+  height: 24px;
+}
+.card-text {
+  padding: 9px;
+}
+
+@media (max-width: 996px) {
+  .card {
+    width: auto;
+    overflow: hidden;
+    padding-right: 6px;
+  }
+  .card-image {
+    float: left;
+    width: 50%;
+  }
+  .card-image video {
+    width: 100%;
+  }
+  .card-header {
+    float: right;
+    width: calc(50% - 20px);
+    border-bottom: 1px solid #e7e7e7;
+  }
+  .card-likes {
+    float: right;
+    width: calc(50% - 20px);
+  }
+  .card-text {
+    float: right;
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 360px) {
+  .card-image {
+    float: left;
+    width: 45%;
+  }
+  .card-header {
+    float: right;
+    width: calc(50% - 10px);
+    border-bottom: 1px solid #e7e7e7;
+  }
+  .card-likes {
+    float: right;
+    width: calc(50% - 10px);
+  }
+  .card-text {
+    float: right;
+    width: calc(50% - 10px);
+  }
+
+}

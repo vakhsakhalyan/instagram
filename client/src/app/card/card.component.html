@@ -1,0 +1,23 @@
+<div class="card">
+  <div class="card-header">
+    <div class="card-header-image">
+        <img src="{{data.user.profile_picture}}"/>
+    </div>
+    <div class="card-header-title">
+      <span class="card-header-title-username">{{data.user.username}}</span>
+      <span *ngIf="data.location" class="card-header-title-location">{{data.location?.name}}</span>
+    </div>
+    <div class="card-header-date">{{data.created_time | formatDate}}</div>
+  </div>
+
+  <div class="card-image">
+      <img src="{{data.images.low_resolution.url}}"/>
+  </div>
+  <div class="card-likes">
+    <span (click)="onLike($event)"><img class="card-likes-image" src="../../assets/like.png"></span>
+    <div class="card-like-text">{{data.likes.count}}</div>
+  </div>
+  <div class="card-text">{{data.caption?.text}}</div>
+</div>
+
+
